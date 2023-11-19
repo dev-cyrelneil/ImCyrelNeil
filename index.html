@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7b0b2faa71.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+        <nav class="header-nav">
+          <p><span class="c">C</span>yrel <span class="c">N</span>eil<span class="dot">.</span></p>
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-end Web Developer</p>
+          <h1>
+            Hi, I am <span>Cyrel Neil</span><br />
+            From Philippines
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- About Me -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" class="user-pic" alt="user" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="desc">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <!-- Skills -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Improved web design and usability through user-experience testing</li>
+                <li>
+                  <span>Technical and Computer</span><br />
+                  Assists in installations, integrations, and configurations
+                </li>
+                <li><span>UX / UI / Graphic Designing</span><br />Designed layout and graphics to enhance the aesthetics and appearance of the website</li>
+                <li><span>Microsoft Office</span><br />Layout, writing, and encoding using document, presentation, and spreadsheet.</li>
+              </ul>
+            </div>
+            <!-- Experiences -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>July 2022 - October 2023</span><br />Front-End Web Developer / Graphic Designer
+                </li>
+                <li>
+                  <span>February – April 2019</span><br />
+                  Technician Assistant
+                </li>
+                <li>
+                  <span>February – May 2018</span><br />Radio DJ Assistant
+                </li>
+              </ul>
+            </div>
+            <!-- Educations -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2018 - 2022</span><br />Gordon College, Olongapo City</li>
+                <li>
+                  <span>2016 - 2018</span><br />
+                  Gordon College SHS, Olongapo City
+                </li>
+                <li>
+                  <span>2012 - 2016</span><br />Gordon Heights National High
+                  School, Olongapo City
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About Me -->
+
+    <!-- Services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+            <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>UI / UX Design</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+            <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>Graphic Design</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+            <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Services -->
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="work-1" />
+            <div class="layer">
+              <h3>Lorem Impsum</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="work-2" />
+            <div class="layer">
+              <h3>Lorem Impsum</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="work-3" />
+            <div class="layer">
+              <h3>Lorem Impsum</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn">View More</a>
+      </div>
+    </div>
+    <!-- End Portfolio -->
+
+    <!-- Contact Form -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-envelope"></i>cyrelneilabsalon@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i>09308550016</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/CyrelNeil" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></i></a>
+              <a href="https://www.linkedin.com/in/cyrel-neil-absalon-ab915228a/" target="_blank"><i class="fab fa-linkedin"></i></i></a>
+            </div>
+            <a href="cv/Cyrel Neil Absalon - CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+              <p id="google-sheet-btn"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact -->
+
+    <!-- Copyright -->
+
+    <div class="copyright">
+      <div class="container">
+        <p>Copyright © Cyrel Neil. Made with <i class="fas fa-heart"></i> by Dev Cy</p>
+      </div>
+    </div>
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <!-- End Script -->
+  </body>
+</html>
