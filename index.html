@@ -1,238 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/7b0b2faa71.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- Header -->
-    <div id="header">
-      <div class="container">
-        <nav class="header-nav">
-          <p><span class="c">C</span>yrel <span class="c">N</span>eil<span class="dot">.</span></p>
-          <ul id="side-menu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fas fa-times" onclick="closeMenu()"></i>
-          </ul>
-          <i class="fas fa-bars" onclick="openMenu()"></i>
-        </nav>
-        <div class="header-text">
-          <p>Front-end Web Developer</p>
-          <h1>
-            Hi, I am <span>Cyrel Neil</span><br />
-            From Philippines
-          </h1>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/7b0b2faa71.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <div id="header">
+    <div class="container">
+      <nav class="header-nav">
+        <p><span class="c">C</span>yrel <span class="c">N</span>eil<span class="dot">.</span></p>
+        <ul id="side-menu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Front-end Web Developer</p>
+        <h1>
+          Hi, I am <span>Cyrel Neil</span><br />
+          From Philippines
+        </h1>
       </div>
     </div>
-    <!-- End Header -->
+  </div>
+  <!-- End Header -->
 
-    <!-- About Me -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/user.png" class="user-pic" alt="user" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p class="desc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+  <!-- About Me -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/cyrel.jpg" class="user-pic" alt="user" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p class="desc">
+            I'm a recent CS graduate with a passion for technology and strong foundation in web design and development.
+            I'm eager to learn and adapt to new technologies, a problem solver, and a team player. I'm excited to
+            kickstart my IT career and contribute to innovative solutions in the field.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills')">
+              Skills
             </p>
+            <p class="tab-links" onclick="openTab('experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+          </div>
+          <!-- Skills -->
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span></li>
+              <li><span>Technical and Computer Skills</span></li>
+              <li><span>WordPress CMS</span></li>
+              <li><span>Figma - UX / UI Design</span></li>
+              <li><span>Graphic Designing</span></li>
+              <li><span>Microsoft Office</span></li>
+              <li><span>Teamwork</span></li>
+              <li><span>Communication and Social</span></li>
+            </ul>
+          </div>
+          <!-- Experiences -->
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>July 2022 - October 2023</span><br />Front-End Web Developer / Graphic Designer<br />• Improved
+                web design and usability through user-experience testing.
 
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="openTab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="openTab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="openTab('education')">Education</p>
-            </div>
-            <!-- Skills -->
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>Web Development</span><br />Improved web design and usability through user-experience testing</li>
-                <li>
-                  <span>Technical and Computer</span><br />
-                  Assists in installations, integrations, and configurations
-                </li>
-                <li><span>UX / UI / Graphic Designing</span><br />Designed layout and graphics to enhance the aesthetics and appearance of the website</li>
-                <li><span>Microsoft Office</span><br />Layout, writing, and encoding using document, presentation, and spreadsheet.</li>
-              </ul>
-            </div>
-            <!-- Experiences -->
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span>July 2022 - October 2023</span><br />Front-End Web Developer / Graphic Designer
-                </li>
-                <li>
-                  <span>February – April 2019</span><br />
-                  Technician Assistant
-                </li>
-                <li>
-                  <span>February – May 2018</span><br />Radio DJ Assistant
-                </li>
-              </ul>
-            </div>
-            <!-- Educations -->
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>2018 - 2022</span><br />Gordon College, Olongapo City</li>
-                <li>
-                  <span>2016 - 2018</span><br />
-                  Gordon College SHS, Olongapo City
-                </li>
-                <li>
-                  <span>2012 - 2016</span><br />Gordon Heights National High
-                  School, Olongapo City
-                </li>
-              </ul>
-            </div>
+              </li>
+              <li>
+                <span>February – April 2019</span><br />
+                Technician Assistant - OJT<br />• Assists in installations, integrations, and configurations.
+              </li>
+              <li>
+                <span>February – May 2018</span><br />Radio DJ Assistant - OJT<br />• Playing requested and hand-selected
+                songs
+              </li>
+            </ul>
+          </div>
+          <!-- Educations -->
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2018 - 2022</span><br />Gordon College, Olongapo City<br />• Bachelor's Degree</li>
+              <li>
+                <span>2016 - 2018</span><br />
+                Gordon College - Senior High School, Olongapo City<br />• NC II Certification in Computer Systems
+                Servicing
+              </li>
+              <li>
+                <span>2012 - 2016</span><br />Gordon Heights National High
+                School, Olongapo City<br />• With Honor
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <!-- End About Me -->
+  </div>
+  <!-- End About Me -->
 
-    <!-- Services -->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fas fa-code"></i>
-            <h2>Web Design</h2>
+  <!-- Services -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>Web Design</h2>
+          <p>
+            Discover the power of our web design expertise. I craft visually appealing, user-friendly websites that elevate your brand. From responsive design to digital visibility strategies, I've got you covered.
+          </p>
+          <!-- <a href="">Learn More <i class="fas fa-arrow-right"></i></a> -->
+        </div>
+        <div>
+          <i class="fab fa-figma"></i>
+          <h2>UI / UX Design</h2>
+          <p>
+            Unleash exceptional UI/UX design with our Figma expertise. I create sleek, intuitive interfaces that captivate users. From seamless navigation to pixel-perfect designs, we ensure your digital experience is top-notch.
+          </p>
+          <!-- <a href="">Learn More <i class="fas fa-arrow-right"></i></a> -->
+        </div>
+        <div>
+          <!-- <i class="fas fa-laptop-code"></i> -->
+          <i class="fas fa-laptop"></i><span class="mobile"><i class="fas fa-mobile-alt"></i></span>
+          <h2>Responsive Web Design</h2>
+          <p>
+            Experience flawless adaptability with our responsive web design solutions. I ensure your website seamlessly adjusts to any device, providing an optimal user experience. From mobile to desktop, captivate your audience with a site that looks stunning everywhere.
+          </p>
+          <!-- <a href="">Learn More <i class="fas fa-arrow-right"></i></a> -->
+        </div>
+      </div>
+      <div class="services-list">
+        <div>
+          <i class="fab fa-wordpress-simple"></i>
+          <h2>WordPress CMS</h2>
+          <p>
+            Unlock the full potential of your online presence with WordPress CMS expertise. I specialize in crafting dynamic, user-friendly websites tailored to your unique needs. Benefit from easy content management, customizable features, and a platform trusted by millions.
+          </p>
+          <!-- <a href="">Learn More <i class="fas fa-arrow-right"></i></a> -->
+        </div>
+        <div>
+          <i class="far fa-keyboard"></i>
+          <h2>Data Encoder</h2>
+          <p>
+            Optimize your data management independently with our freelance data encoding services. I specialize in accurate and efficient data entry, ensuring the integrity of your information. From numerical data to text, trust in my expertise to handle your encoding needs with precision. 
+          </p>
+          <!-- <a href="">Learn More <i class="fas fa-arrow-right"></i></a> -->
+        </div>
+        <div>
+          <i class="fas fa-network-wired"></i>
+          <h2>IT Support</h2>
+          <p>
+            Experience reliable IT support tailored for your needs. As an IT specialist, I offer responsive solutions for technical issues, system maintenance, and troubleshooting. From software glitches to hardware concerns, trust in my expertise to keep your systems running smoothly.
+          </p>
+          <!-- <a href="">Learn More <i class="fas fa-arrow-right"></i></a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Services -->
+
+  <!-- Portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Works</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/Efab image-2.png" alt="work-1" />
+          <div class="layer">
+            <h3>EFAB Website Design</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
+              industry.
             </p>
-            <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+            <a href="https://www.figma.com/file/yus0JoL6T99TEtYtaH7OOa/EFAB?type=design&node-id=209%3A2&mode=design&t=Z3Hgk4mMDcH1pj0v-1" target="_blank"><i class="fas fa-external-link-alt"></i></a>
           </div>
-          <div>
-            <i class="fas fa-crop-alt"></i>
-            <h2>UI / UX Design</h2>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png" alt="work-2" />
+          <div class="layer">
+            <h3>Lorem Impsum</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
+              industry.
             </p>
-            <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
           </div>
-          <div>
-            <i class="fab fa-app-store"></i>
-            <h2>Graphic Design</h2>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" alt="work-3" />
+          <div class="layer">
+            <h3>Lorem Impsum</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
+              industry.
             </p>
-            <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
       </div>
+      <a href="page/portfolio.html" class="btn">View More</a>
     </div>
-    <!-- End Services -->
+  </div>
+  <!-- End Portfolio -->
 
-    <!-- Portfolio -->
-    <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">My Works</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="images/work-1.png" alt="work-1" />
-            <div class="layer">
-              <h3>Lorem Impsum</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
-            </div>
+  <!-- Contact Form -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-envelope"></i>cyrelneilabsalon@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i>09308550016</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/CyrelNeil" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></i></a>
+            <a href="https://www.linkedin.com/in/cyrel-neil-absalon-ab915228a/" target="_blank"><i
+                class="fab fa-linkedin"></i></i></a>
           </div>
-          <div class="work">
-            <img src="images/work-2.png" alt="work-2" />
-            <div class="layer">
-              <h3>Lorem Impsum</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/work-3.png" alt="work-3" />
-            <div class="layer">
-              <h3>Lorem Impsum</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
+          <a href="cv/Cyrel Neil Absalon - CV.pdf" download class="btn btn2">Download CV</a>
         </div>
-        <a href="" class="btn">View More</a>
-      </div>
-    </div>
-    <!-- End Portfolio -->
-
-    <!-- Contact Form -->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fas fa-envelope"></i>cyrelneilabsalon@gmail.com</p>
-            <p><i class="fas fa-phone-alt"></i>09308550016</p>
-            <div class="social-icons">
-              <a href="https://www.facebook.com/CyrelNeil" target="_blank"><i class="fab fa-facebook"></i></a>
-              <a href=""><i class="fab fa-instagram"></i></i></a>
-              <a href="https://www.linkedin.com/in/cyrel-neil-absalon-ab915228a/" target="_blank"><i class="fab fa-linkedin"></i></i></a>
-            </div>
-            <a href="cv/Cyrel Neil Absalon - CV.pdf" download class="btn btn2">Download CV</a>
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="email" name="Email" placeholder="Your Email" required>
-              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-              <p id="google-sheet-btn"></p>
-          </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <p id="google-sheet-btn"></p>
         </div>
       </div>
     </div>
-    <!-- End Contact -->
+  </div>
+  <!-- End Contact -->
 
-    <!-- Copyright -->
+  <!-- Copyright -->
 
-    <div class="copyright">
-      <div class="container">
-        <p>Copyright © Cyrel Neil. Made with <i class="fas fa-heart"></i> by Dev Cy</p>
-      </div>
+  <div class="copyright">
+    <div class="container">
+      <p>Copyright © Cyrel Neil. Made with <i class="fas fa-heart"></i> by Dev Cy</p>
     </div>
+  </div>
 
 
-    <!-- Script -->
-    <script src="script.js"></script>
-    <!-- End Script -->
-  </body>
+  <!-- Script -->
+  <script src="script.js"></script>
+  <!-- End Script -->
+</body>
+
 </html>

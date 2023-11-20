@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://kit.fontawesome.com/7b0b2faa71.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <div id="header">
+    <div class="container">
+      <nav class="header-nav">
+        <p><span class="c">C</span>yrel <span class="c">N</span>eil<span class="dot">.</span></p>
+        <ul id="side-menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Front-end Web Developer</p>
+        <h1>
+          Hi, I am <span>Cyrel Neil</span><br />
+          From Philippines
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!-- End Header -->
+
+  <!-- Portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Works</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" alt="work-1" />
+          <div class="layer">
+            <h3>Lorem Impsum</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png" alt="work-2" />
+          <div class="layer">
+            <h3>Lorem Impsum</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" alt="work-3" />
+          <div class="layer">
+            <h3>Lorem Impsum</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="" class="btn">View More</a>
+    </div>
+  </div>
+  <!-- End Portfolio -->
+
+  <!-- Contact Form -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-envelope"></i>cyrelneilabsalon@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i>09308550016</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/CyrelNeil" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></i></a>
+            <a href="https://www.linkedin.com/in/cyrel-neil-absalon-ab915228a/" target="_blank"><i
+                class="fab fa-linkedin"></i></i></a>
+          </div>
+          <a href="cv/Cyrel Neil Absalon - CV.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <p id="google-sheet-btn"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Contact -->
+
+  <!-- Copyright -->
+
+  <div class="copyright">
+    <div class="container">
+      <p>Copyright © Cyrel Neil. Made with <i class="fas fa-heart"></i> by Dev Cy</p>
+    </div>
+  </div>
+
+
+  <!-- Script -->
+  <script src="script.js"></script>
+  <!-- End Script -->
+</body>
+
+</html>

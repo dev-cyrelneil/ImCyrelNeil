@@ -4,7 +4,7 @@
 4. Change information
 5. Change my services
 6. Change and add my works
- 6.1. Add page for portfolio(Undecided) 
+ 6.1. Add page for portfolio(Undecided)
 7. Add link for social media accounts
  Done FB
  Done Linkedin
