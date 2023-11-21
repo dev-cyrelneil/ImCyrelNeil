@@ -27,10 +27,10 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/SHS-bg.png);
+  background-image: url(images/cyrel.png);
   background-size: 650px 880px;
   background-repeat: no-repeat;
-  background-position: 100% 0%;
+  background-position: 100% 10%;
 }
 
 .container {
@@ -503,8 +503,8 @@ form .btn2 {
 
   /* Header */
   #header {
-    background-image: url(images/SHS-bg-1.png);
-    background-size: cover;
+    background-image: url(images/cyrel.png);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 100% 100%;
   }
