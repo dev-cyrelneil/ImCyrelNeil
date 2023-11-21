@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --neon-orange: #ff6e00;
+  --neon-orange: #f95f00;
+  --orange: #ff6e00
   --dark-pink: #ff004f;
   --white: #ffffff;
 }
@@ -292,7 +293,7 @@ body {
 
 .work img {
   width: 100%;
-  height: 100%;
+  height: 50vh;
   object-fit: cover;
   border-radius: 10px;
   display: block;
@@ -526,6 +527,12 @@ form .btn2 {
     margin-right: 20px;
   }
   /* End About */
+
+  /* Portfolio */
+  .work img {
+    height: 60vh;
+  }
+  /* Portfolio */
 
   /* Contact */
   .contact-left,
