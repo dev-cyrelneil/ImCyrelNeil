@@ -2,8 +2,7 @@
 
 :root {
   --neon-orange: #f95f00;
-  --orange: #ff6e00
-  --dark-pink: #ff004f;
+  --orange: #ff6e00 --dark-pink: #ff004f;
   --white: #ffffff;
 }
 
@@ -28,9 +27,10 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/background.png);
-  background-size: cover;
-  background-position: center;
+  background-image: url(images/SHS-bg.png);
+  background-size: 650px 880px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
 }
 
 .container {
@@ -92,7 +92,7 @@ body {
 }
 
 .header-text {
-  margin-top: 20%;
+  margin-top: 15%;
   font-size: 30px;
 }
 
@@ -104,6 +104,30 @@ body {
 .header-text h1 span {
   color: var(--neon-orange);
 }
+
+.header-btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid var(--neon-orange);
+  border-radius: 6px;
+  padding: 14px 50px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 21px;
+  transition: background 0.5s;
+}
+
+.header-btn.btn2 {
+  display: inline-block;
+  background-color: var(--neon-orange);
+  transition: transform 0.5s;
+}
+
+.header-btn.btn2:hover {
+  transform: scale(1.1);
+}
+
 /****** End Header ******/
 
 /****** About Me ******/
@@ -199,6 +223,7 @@ body {
 .tab-contents.active-tab {
   display: block;
 }
+
 /****** End About Me ******/
 
 /****** Services ******/
@@ -465,26 +490,46 @@ form .btn2 {
 .copyright p i {
   color: var(--neon-orange);
 }
+
 /****** End Copyright ******/
 
 /****** Mobile - Media Query ******/
 
 @media only screen and (max-width: 600px) {
+
   /* Header */
   #header {
-    background-image: url(images/phone-background.png);
+    background-image: url(images/SHS-bg-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
   }
+
   .header-text {
-    margin-top: 93%;
-    font-size: 16px;
+    margin-top: 88%;
+    text-align: center;
+    font-size: 21px;
   }
+
   .header-text h1 {
     font-size: 30px;
+    text-shadow: 1px 1px #222;
   }
+
+  .header-text p {
+    text-shadow: 1px 1px #222;
+  }
+
+  .header-btn {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
   .header-nav .fas {
     display: block;
     font-size: 25px;
   }
+
   .header-nav ul {
     background-color: var(--neon-orange);
     position: fixed;
@@ -496,42 +541,51 @@ form .btn2 {
     z-index: 2;
     transition: right 0.5s;
   }
+
   .header-nav ul li {
     display: block;
     margin: 25px;
   }
+
   .header-nav ul .fas {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
   }
+
   /* End Header */
 
   /* About */
   .sub-title {
     font-size: 40px;
   }
+
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
   }
+
   .about-col-1 {
     margin-bottom: 30px;
   }
+
   .about-col-2 .desc {
     font-size: 14px;
   }
+
   .tab-links {
     font-size: 18px;
     margin-right: 20px;
   }
+
   /* End About */
 
   /* Portfolio */
   .work img {
     height: 60vh;
   }
+
   /* Portfolio */
 
   /* Contact */
@@ -539,19 +593,24 @@ form .btn2 {
   .contact-right {
     flex-basis: 100%;
   }
+
   .contact-left p {
     margin-top: 20px;
     font-size: 18px;
   }
+
   .contact-left p i {
     font-size: 18px;
   }
+
   .social-icons {
     margin-top: 15px;
   }
-  .social-icons a i{
+
+  .social-icons a i {
     font-size: 18px;
   }
+
   /* End Contact */
 
   /* Copyright */
