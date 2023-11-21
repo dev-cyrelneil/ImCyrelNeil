@@ -396,6 +396,10 @@ body {
 /****** End Portfolio ******/
 
 /****** Contact ******/
+#contact {
+  margin-top: 50px;
+}
+
 .contact-left {
   flex-basis: 35%;
 }
