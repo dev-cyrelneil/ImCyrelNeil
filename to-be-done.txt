@@ -1,13 +1,15 @@
 1. Change Logo (Done 90%)
+ 1.1. Upload favicon (DONE)
 2. Change Accent Color (Done 90%)
-3. Change Images
-4. Change information
-5. Change my services
-6. Change and add my works
- 6.1. Add page for portfolio(Undecided)
+3. Change Images (DONE)
+4. Change information (DONE)
+5. Change my services (DONE)
+6. Change and add my works (DONE)
+ 6.1. Add page for portfolio(DONE BUT REMOVED)
 7. Add link for social media accounts
  Done FB
  Done Linkedin
  Pending IG
 8. add cv file to download button (Done)
-9. Animation
+9. Animation (DONE)
+10. 

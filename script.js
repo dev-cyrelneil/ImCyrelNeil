@@ -34,10 +34,10 @@ const googleSheet = document.getElementById('google-sheet-btn');
 
 form.addEventListener('submit', e => {
   e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then(response => {
       googleSheet.innerHTML = "Message sent successfully"
-      setTimeout(function(){
+      setTimeout(function () {
         googleSheet.innerHTML = ""
       }, 5000)
       form.reset()
@@ -45,3 +45,22 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message))
 })
+
+// Scroll Animation
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+  var reveals = document.querySelectorAll('.reveal');
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 150;
+
+    if (revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add('active');
+    } else {
+      reveals[i].classList.remove('active');
+    }
+  }
+}

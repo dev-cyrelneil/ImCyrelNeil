@@ -498,6 +498,20 @@ form .btn2 {
 
 /****** End Copyright ******/
 
+/* Scroll Animation */
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
 /****** Mobile - Media Query ******/
 
 @media only screen and (max-width: 600px) {
